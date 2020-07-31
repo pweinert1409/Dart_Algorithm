@@ -1,13 +1,13 @@
 # Author: Samuel Lamb
 # Camera Dimensions : 1280 x 720 (720p HD)
 
-from skimage.metrics import structural_similarity
-from skimage.measure import compare_ssim
-import argparse
-import imutils
-import cv2
-import time
 import math
+import time
+
+import cv2
+import imutils
+from skimage.metrics import structural_similarity
+
 
 ##########################################################################################################################################
 # Starts to capture the video feed from the camera, also initialized some key variables that need to be present outside of the main loop #
@@ -24,9 +24,7 @@ Points2 = 0
 #############################################################
 
 def Score(x,y):
-	###################################################################################################################################
-	# xNew and yNew will be the central point of the image, allowing for us to center the camera and view the dart board as a circle. #
-	###################################################################################################################################
+	# ################################################################################################################################## xNew and yNew will be the central point of the image, allowing for us to center the camera and view the dart board as a circle. # ##################################################################################################################################
 	xNew = x - 640/2
 	yNew = y - 480/2
 	# print ("X,Y              : ",xNew,",",yNew)
@@ -171,7 +169,7 @@ while (img_count < 15):
 	# Load in images, convert to grayscale, and get the difference #
 	################################################################
 
-	path1 = r'/home/user/Desktop/Darts/Dart_Image_0.png'
+	path1 = r'/home/pi/PycharmProjects/Dart_Algorithm/Dart_Image_0.png'
 	imageA = cv2.imread(path1)
 	imageB = cv2.imread("Dart_Image_{}.png".format(img_count-1))
 

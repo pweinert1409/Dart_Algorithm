@@ -5,7 +5,7 @@ x = 1280
 y = 0
 xNew = x - 1280/2
 yNew = y - 720/2
-# print ("X,Y              : ",xNew,",",yNew)
+print ("X,Y              : ",xNew,",",yNew)
 # Calculating radius
 xyInterim = (xNew ** 2) + (yNew ** 2)
 R = math.sqrt(xyInterim)
