@@ -11,3 +11,6 @@ So the big step to improving this software is to find a way to determine the ape
 As it currently stands the code works and will score efficiently but there is a lot of room for error if the dart is thrown at an odd angle or is close to another region.
 
 
+References & Acknowledgements:
+I would like to thank Chase Pavlick for helping with the math involved in mapping out the regions of the dartboard and also assisting with the adaptive thresholding.
+I would also like to extend thanks to Kyle Greer and Jack Weiler for assiting with the hardware and assembly.
